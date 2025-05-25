@@ -1,0 +1,2792 @@
+{
+  "boiler_data": {
+    "columns": [
+      {
+        "name": "Date",
+        "type": "DATETIME",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "LDO Consumption(kl)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionFeeder(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionKPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Difference Coal Feeder Vs KPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Equivalent Coal Consumption due to HFO Consumption",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Difference of Coal KPI to equivalent Coal KPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bio fuel consumption(T)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionBunkered(T)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Actual Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Deemed Or Standby Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Breakdown Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "No.of Tripping(Nos)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "No.of Stoppages(Nos)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "TM",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Oxygen (LHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Oxygen (RHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Inlet (LHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Inlet (RHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FD air inlet temperature",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Drum Pressure Avg. ( )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed Water Temperature",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed Water Pressure",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Load",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "APC",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FC",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "VM",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Moisture",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Ash",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "GCV",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "C",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "H2",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "S",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "N2",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "O",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "AVG O2 at APH I/L (Wet as measured)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Leakage across APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Avg O2 at APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "PA Flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FD Flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Primary Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Secondary Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Weighted Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Flue Gas temp APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO2 APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO ESP outlet (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH outlet (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO Dilution across ESP (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO Online ESP O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH O/L Measured",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash Carbon",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash Carbon",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash Temp  Unit specific",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Fly Ash Temp",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Hot Well makeup for 24 hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Hot well makeup  (% )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Air Humidity Factor",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Theoretical Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Excess Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Actual Air Supplied",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Mass of Dry Flue Gas",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss Due to Dry Flue Gas",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2O in fuel",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2 in fuel",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2O in Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Partial Combustion Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash for Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash for Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash for Sensible Heat Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash for Sensible Heat Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Sensisble Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Radiation Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency (ASME PTC4)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Mill reject loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Blow down leakage loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Other Losses  Plant Specific",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Unit Generation",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal Feeder reading (DCS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal feed by CHP : Bunker Adjusted",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal feed by CHP: Beltweigher reading",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Running hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Derated Hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam generation from boiler",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam temp at boiler outlet",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam pressure at boiler outlet(kg/cm2)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam pressure at boiler outlet(Bar)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam enthalpy (Ref )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed water flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW temperature at ECO inlet",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW pressure at ECO inlet (kg/cm2)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW pressure at ECO inlet(Bar)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW enthalpy (Ref)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "HSD/Bottom Oil Consumed(KL)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Density of HSD/Bottom Oil",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "HSD/Bottom Oil Consumed(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "GCV of HSD/Bottom Oil",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Consump (w/o handling loss)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal Consumption (with 0.8% handling loss)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "SOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "NOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO (PPM)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Year",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Month",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Week",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Day",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "DayOfWeek",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Sheet_Source",
+        "type": "TEXT",
+        "primary_key": false,
+        "nullable": true
+      }
+    ],
+    "row_count": 1098
+  },
+  "boiler_bolr_1": {
+    "columns": [
+      {
+        "name": "Date",
+        "type": "DATETIME",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "LDO Consumption(kl)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionFeeder(MT)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionKPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Difference Coal Feeder Vs KPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Equivalent Coal Consumption due to HFO Consumption",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Difference of Coal KPI to equivalent Coal KPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bio fuel consumption(T)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionBunkered(T)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Actual Running Hours(HRS)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Deemed Or Standby Running Hours(HRS)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Breakdown Running Hours(HRS)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "No.of Tripping(Nos)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "No.of Stoppages(Nos)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "TM",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Oxygen (LHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Oxygen (RHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Inlet (LHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Inlet (RHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FD air inlet temperature",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Drum Pressure Avg. ( )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed Water Temperature",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed Water Pressure",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Load",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "APC",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FC",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "VM",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Moisture",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Ash",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "GCV",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "C",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "H2",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "S",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "N2",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "O",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "AVG O2 at APH I/L (Wet as measured)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Leakage across APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Avg O2 at APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "PA Flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FD Flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Primary Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Secondary Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Weighted Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Flue Gas temp APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO2 APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO ESP outlet (Test)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH outlet (Test)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO Dilution across ESP (Test)",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO Online ESP O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH O/L Measured",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash Carbon",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash Carbon",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash Temp  Unit specific",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Fly Ash Temp",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Hot Well makeup for 24 hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Hot well makeup  (% )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Air Humidity Factor",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Theoretical Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Excess Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Actual Air Supplied",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Mass of Dry Flue Gas",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss Due to Dry Flue Gas",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2O in fuel",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2 in fuel",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2O in Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Partial Combustion Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash for Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash for Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash for Sensible Heat Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash for Sensible Heat Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Sensisble Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Radiation Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency (ASME PTC4)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Mill reject loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Blow down leakage loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Other Losses  Plant Specific",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Unit Generation",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal Feeder reading (DCS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal feed by CHP : Bunker Adjusted",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal feed by CHP: Beltweigher reading",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Running hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Derated Hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam generation from boiler",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam temp at boiler outlet",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam pressure at boiler outlet(kg/cm2)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam pressure at boiler outlet(Bar)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam enthalpy (Ref )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed water flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW temperature at ECO inlet",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW pressure at ECO inlet (kg/cm2)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW pressure at ECO inlet(Bar)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW enthalpy (Ref)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "HSD/Bottom Oil Consumed(KL)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Density of HSD/Bottom Oil",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "HSD/Bottom Oil Consumed(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "GCV of HSD/Bottom Oil",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Consump (w/o handling loss)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal Consumption (with 0.8% handling loss)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "SOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "NOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO (PPM)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Year",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Month",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Week",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Day",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "DayOfWeek",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Sheet_Source",
+        "type": "TEXT",
+        "primary_key": false,
+        "nullable": true
+      }
+    ],
+    "row_count": 366
+  },
+  "boiler_bol2": {
+    "columns": [
+      {
+        "name": "Date",
+        "type": "DATETIME",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "LDO Consumption(kl)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionFeeder(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionKPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Difference Coal Feeder Vs KPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Equivalent Coal Consumption due to HFO Consumption",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Difference of Coal KPI to equivalent Coal KPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bio fuel consumption(T)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionBunkered(T)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Actual Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Deemed Or Standby Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Breakdown Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "No.of Tripping(Nos)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "No.of Stoppages(Nos)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "TM",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Oxygen (LHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Oxygen (RHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Inlet (LHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Inlet (RHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FD air inlet temperature",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Drum Pressure Avg. ( )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed Water Temperature",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed Water Pressure",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Load",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "APC",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FC",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "VM",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Moisture",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Ash",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "GCV",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "C",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "H2",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "S",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "N2",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "O",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "AVG O2 at APH I/L (Wet as measured)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Leakage across APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Avg O2 at APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "PA Flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FD Flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Primary Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Secondary Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Weighted Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Flue Gas temp APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO2 APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO ESP outlet (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH outlet (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO Dilution across ESP (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO Online ESP O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH O/L Measured",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash Carbon",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash Carbon",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash Temp  Unit specific",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Fly Ash Temp",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Hot Well makeup for 24 hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Hot well makeup  (% )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Air Humidity Factor",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Theoretical Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Excess Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Actual Air Supplied",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Mass of Dry Flue Gas",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss Due to Dry Flue Gas",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2O in fuel",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2 in fuel",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2O in Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Partial Combustion Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash for Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash for Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash for Sensible Heat Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash for Sensible Heat Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Sensisble Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Radiation Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency (ASME PTC4)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Mill reject loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Blow down leakage loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Other Losses  Plant Specific",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Unit Generation",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal Feeder reading (DCS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal feed by CHP : Bunker Adjusted",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal feed by CHP: Beltweigher reading",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Running hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Derated Hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam generation from boiler",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam temp at boiler outlet",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam pressure at boiler outlet(kg/cm2)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam pressure at boiler outlet(Bar)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam enthalpy (Ref )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed water flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW temperature at ECO inlet",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW pressure at ECO inlet (kg/cm2)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW pressure at ECO inlet(Bar)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW enthalpy (Ref)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "HSD/Bottom Oil Consumed(KL)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Density of HSD/Bottom Oil",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "HSD/Bottom Oil Consumed(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "GCV of HSD/Bottom Oil",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Consump (w/o handling loss)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal Consumption (with 0.8% handling loss)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "SOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "NOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO (PPM)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Year",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Month",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Week",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Day",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "DayOfWeek",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Sheet_Source",
+        "type": "TEXT",
+        "primary_key": false,
+        "nullable": true
+      }
+    ],
+    "row_count": 366
+  },
+  "boiler_bolr_3": {
+    "columns": [
+      {
+        "name": "Date",
+        "type": "DATETIME",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "LDO Consumption(kl)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionFeeder(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionKPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Difference Coal Feeder Vs KPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Equivalent Coal Consumption due to HFO Consumption",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Difference of Coal KPI to equivalent Coal KPI",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bio fuel consumption(T)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionBunkered(T)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Actual Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Deemed Or Standby Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Breakdown Running Hours(HRS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "No.of Tripping(Nos)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "No.of Stoppages(Nos)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "TM",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Oxygen (LHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Oxygen (RHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Inlet (LHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Inlet (RHS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FD air inlet temperature",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Drum Pressure Avg. ( )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed Water Temperature",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed Water Pressure",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Load",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "APC",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FC",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "VM",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Moisture",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Ash",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "GCV",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "C",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "H2",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "S",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "N2",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "O",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "AVG O2 at APH I/L (Wet as measured)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Leakage across APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Avg O2 at APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "PA Flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FD Flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Primary Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Secondary Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Weighted Air I/L temp to APH",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Flue Gas temp APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO2 APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO ESP outlet (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH outlet (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO Dilution across ESP (Test)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO Online ESP O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH O/L Measured",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO APH O/L",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash Carbon",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash Carbon",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash Temp  Unit specific",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Fly Ash Temp",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Hot Well makeup for 24 hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Hot well makeup  (% )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Air Humidity Factor",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Theoretical Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Excess Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Actual Air Supplied",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Mass of Dry Flue Gas",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss Due to Dry Flue Gas",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2O in fuel",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2 in fuel",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Loss due to H2O in Air",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Partial Combustion Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash for Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash for Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Unburnt Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "ESP Ash for Sensible Heat Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Bottom Ash for Sensible Heat Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Sensisble Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Radiation Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Total Loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency (ASME PTC4)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Mill reject loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Blow down leakage loss",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Other Losses  Plant Specific",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Unit Generation",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal Feeder reading (DCS)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal feed by CHP : Bunker Adjusted",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal feed by CHP: Beltweigher reading",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Running hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Derated Hours",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam generation from boiler",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam temp at boiler outlet",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam pressure at boiler outlet(kg/cm2)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam pressure at boiler outlet(Bar)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Steam enthalpy (Ref )",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Feed water flow",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW temperature at ECO inlet",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW pressure at ECO inlet (kg/cm2)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW pressure at ECO inlet(Bar)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "FW enthalpy (Ref)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "HSD/Bottom Oil Consumed(KL)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Density of HSD/Bottom Oil",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "HSD/Bottom Oil Consumed(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "GCV of HSD/Bottom Oil",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Consump (w/o handling loss)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal Consumption (with 0.8% handling loss)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "SOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "NOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO (PPM)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Year",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Month",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Week",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Day",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "DayOfWeek",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Sheet_Source",
+        "type": "TEXT",
+        "primary_key": false,
+        "nullable": true
+      }
+    ],
+    "row_count": 366
+  },
+  "weekly_stats": {
+    "columns": [
+      {
+        "name": "Sheet_Source",
+        "type": "TEXT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Week",
+        "type": "BIGINT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionFeeder(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Unit Generation",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "SOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "NOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO (PPM)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      }
+    ],
+    "row_count": 156
+  },
+  "monthly_stats": {
+    "columns": [
+      {
+        "name": "Sheet_Source",
+        "type": "TEXT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Month",
+        "type": "INTEGER",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Coal ConsumptionFeeder(MT)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Unit Generation",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "Boiler Efficiency",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "SOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "NOx (mg/m3)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      },
+      {
+        "name": "CO (PPM)",
+        "type": "FLOAT",
+        "primary_key": false,
+        "nullable": true
+      }
+    ],
+    "row_count": 36
+  }
+}

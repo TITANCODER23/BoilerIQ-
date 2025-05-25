@@ -1,0 +1,239 @@
+# Boiler Data Database Creation Process
+
+This document explains the detailed process of how the `boiler_data_all_sheets.db` SQLite database was created, including all the steps from data loading to database creation.
+
+## Overview
+
+The database was created using Python with libraries such as pandas, numpy, sqlite3, and sqlalchemy. The process involved loading data from an Excel file with multiple sheets, cleaning and preprocessing the data, and then storing it in a SQLite database.
+
+## Source Data
+
+The source data was an Excel file named "Boiler Data.xlsx" which contained multiple sheets:
+- BOLR 1
+- BOL2
+- BOLR 3
+
+Each sheet contained boiler performance data with various metrics such as:
+- Date
+- Coal consumption
+- Unit generation
+- Boiler efficiency
+- Emissions data (SOx, NOx, CO)
+- And many other operational parameters
+
+## Detailed Process Steps
+
+### 1. Data Loading
+
+The process began by loading all sheets from the Excel file:
+```python
+excel_file = 'Boiler Data.xlsx'
+sheet_names = pd.ExcelFile(excel_file).sheet_names
+```
+
+Each sheet was loaded into a separate pandas DataFrame:
+```python
+for sheet_name in sheet_names:
+    df = pd.read_excel(excel_file, sheet_name=sheet_name)
+```
+
+### 2. Data Cleaning and Preprocessing
+
+For each sheet, the following cleaning and preprocessing steps were applied:
+
+#### 2.1 Column Name Standardization
+- Removed extra spaces from column names
+- Fixed typos in column names (e.g., 'NOx mg/m3)' to 'NOx (mg/m3)')
+
+#### 2.2 Missing Value Handling
+- For numerical columns, missing values were filled with the median value of the respective column
+```python
+numeric_cols = df.select_dtypes(include=['float64', 'int64']).columns
+df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].median())
+```
+
+#### 2.3 Outlier Handling
+- Used the Interquartile Range (IQR) method to detect and handle outliers
+- Outliers were replaced with the median value of the respective column
+- This was applied to important columns such as:
+  - Coal ConsumptionFeeder(MT)
+  - Unit Generation
+  - Boiler Efficiency
+  - SOx (mg/m3)
+  - NOx (mg/m3)
+  - CO (PPM)
+
+```python
+def handle_outliers(df, column):
+    Q1 = df[column].quantile(0.25)
+    Q3 = df[column].quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    
+    # Replace outliers with the median
+    median_val = df[column].median()
+    df.loc[df[column] < lower_bound, column] = median_val
+    df.loc[df[column] > upper_bound, column] = median_val
+    
+    return df
+```
+
+#### 2.4 Feature Engineering
+- Created additional time-based features from the Date column:
+  - Year
+  - Month
+  - Week
+  - Day
+  - DayOfWeek (0=Monday, 6=Sunday)
+
+```python
+df['Year'] = df['Date'].dt.year
+df['Month'] = df['Date'].dt.month
+df['Week'] = df['Date'].dt.isocalendar().week
+df['Day'] = df['Date'].dt.day
+df['DayOfWeek'] = df['Date'].dt.dayofweek
+```
+
+#### 2.5 Sheet Source Tracking
+- Added a 'Sheet_Source' column to each DataFrame to track which sheet the data came from
+```python
+df_clean['Sheet_Source'] = sheet_name
+```
+
+### 3. Data Combination
+
+After cleaning each sheet individually, all sheets were combined into a single DataFrame:
+```python
+combined_df = pd.concat(all_sheets_data, ignore_index=True)
+```
+
+### 4. Aggregated Views Creation
+
+Created aggregated views for statistical analysis:
+
+#### 4.1 Weekly Aggregation
+```python
+weekly_agg = combined_df.groupby(['Sheet_Source', 'Week']).agg({
+    'Coal ConsumptionFeeder(MT)': 'sum',
+    'Unit Generation': 'sum',
+    'Boiler Efficiency': 'mean',
+    'SOx (mg/m3)': 'mean',
+    'NOx (mg/m3)': 'mean',
+    'CO (PPM)': 'mean'
+}).reset_index()
+```
+
+#### 4.2 Monthly Aggregation
+```python
+monthly_agg = combined_df.groupby(['Sheet_Source', 'Month']).agg({
+    'Coal ConsumptionFeeder(MT)': 'sum',
+    'Unit Generation': 'sum',
+    'Boiler Efficiency': 'mean',
+    'SOx (mg/m3)': 'mean',
+    'NOx (mg/m3)': 'mean',
+    'CO (PPM)': 'mean'
+}).reset_index()
+```
+
+### 5. Data Export to CSV and Excel
+
+The cleaned and combined data was saved to CSV and Excel files for reference:
+```python
+combined_df.to_csv('Data Cleaning and Preprocessing/boiler_data_clean_all_sheets.csv', index=False)
+combined_df.to_excel('Data Cleaning and Preprocessing/boiler_data_clean_all_sheets.xlsx', index=False)
+```
+
+Individual cleaned sheets were also saved to a single Excel file with multiple sheets:
+```python
+with pd.ExcelWriter('Data Cleaning and Preprocessing/boiler_data_clean_by_sheet.xlsx') as writer:
+    for i, sheet_name in enumerate(sheet_names):
+        sheet_data = all_sheets_data[i]
+        sheet_data.to_excel(writer, sheet_name=sheet_name, index=False)
+```
+
+### 6. Database Creation
+
+Finally, the data was saved to a SQLite database:
+
+#### 6.1 Database Connection Setup
+```python
+db_path = 'boiler_data_all_sheets.db'
+engine = create_engine(f'sqlite:///{db_path}')
+```
+
+#### 6.2 Tables Creation
+- Main combined data table:
+```python
+combined_df.to_sql('boiler_data', engine, if_exists='replace', index=False)
+```
+
+- Individual sheet tables (with sheet name as part of the table name):
+```python
+for i, sheet_name in enumerate(sheet_names):
+    sheet_data = all_sheets_data[i]
+    sheet_data.to_sql(f'boiler_{sheet_name.lower().replace(" ", "_")}', engine, if_exists='replace', index=False)
+```
+
+- Aggregated statistics tables:
+```python
+weekly_agg.to_sql('weekly_stats', engine, if_exists='replace', index=False)
+monthly_agg.to_sql('monthly_stats', engine, if_exists='replace', index=False)
+```
+
+### 7. Database Verification
+
+The database was verified by checking the tables and row counts:
+```python
+with sqlite3.connect(db_path) as conn:
+    cursor = conn.cursor()
+    
+    # Check tables
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+    tables = cursor.fetchall()
+    
+    # Check row counts
+    for table in [table[0] for table in tables]:
+        cursor.execute(f"SELECT COUNT(*) FROM {table};")
+        count = cursor.fetchone()[0]
+```
+
+## Database Structure
+
+The final database contains the following tables:
+
+1. `boiler_data`: Combined data from all sheets (1098 rows)
+   - Contains all columns from the original data plus the additional time-based features
+   - Includes a 'Sheet_Source' column to identify the source sheet
+
+2. `boiler_bolr_1`: Data from the BOLR 1 sheet (366 rows)
+   - Contains all columns from the BOLR 1 sheet plus the additional time-based features
+   - Includes a 'Sheet_Source' column set to 'BOLR 1'
+
+3. `boiler_bol2`: Data from the BOL2 sheet (366 rows)
+   - Contains all columns from the BOL2 sheet plus the additional time-based features
+   - Includes a 'Sheet_Source' column set to 'BOL2'
+
+4. `boiler_bolr_3`: Data from the BOLR 3 sheet (366 rows)
+   - Contains all columns from the BOLR 3 sheet plus the additional time-based features
+   - Includes a 'Sheet_Source' column set to 'BOLR 3'
+
+5. `weekly_stats`: Weekly aggregated statistics (156 rows)
+   - Grouped by Sheet_Source and Week
+   - Contains sum of Coal ConsumptionFeeder(MT) and Unit Generation
+   - Contains mean of Boiler Efficiency, SOx (mg/m3), NOx (mg/m3), and CO (PPM)
+
+6. `monthly_stats`: Monthly aggregated statistics (36 rows)
+   - Grouped by Sheet_Source and Month
+   - Contains sum of Coal ConsumptionFeeder(MT) and Unit Generation
+   - Contains mean of Boiler Efficiency, SOx (mg/m3), NOx (mg/m3), and CO (PPM)
+
+## Conclusion
+
+The `boiler_data_all_sheets.db` database was created through a comprehensive process of data loading, cleaning, preprocessing, and aggregation. The database provides a structured and cleaned version of the boiler data, making it suitable for further analysis and querying.
+
+The database structure allows for:
+- Analysis of individual boiler performance
+- Comparison between different boilers
+- Time-based analysis (daily, weekly, monthly)
+- Statistical analysis of key performance indicators
